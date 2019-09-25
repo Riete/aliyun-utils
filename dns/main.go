@@ -6,8 +6,8 @@ import (
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/alidns"
 )
 
-func NewClient(regionId, accessKeyId, accessKeySecrt string) *alidns.Client {
-	client, err := alidns.NewClientWithAccessKey(regionId, accessKeyId, accessKeySecrt)
+func NewClient(regionId, accessKeyId, accessKeySecret string) *alidns.Client {
+	client, err := alidns.NewClientWithAccessKey(regionId, accessKeyId, accessKeySecret)
 	if err != nil {
 		panic(fmt.Sprintf("[DNS]: create client failed, %s", err))
 	}
