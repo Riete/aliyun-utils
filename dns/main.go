@@ -54,13 +54,13 @@ func main() {
 		panic("record is required")
 	}
 	if *accessKeyId == "" {
-		panic("accessKeyId is required")
+		panic("access-key-id is required")
 	}
 	if *accessKeySecret == "" {
-		panic("accessKeySecret is required")
+		panic("access-key-secret is required")
 	}
 	if *domainName == "" {
-		panic("domainName is required")
+		panic("domain-name is required")
 	}
 
 	client := NewClient(*regionId, *accessKeyId, *accessKeySecret)
