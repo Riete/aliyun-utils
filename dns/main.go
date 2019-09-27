@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/alidns"
 )
 

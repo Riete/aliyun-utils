@@ -3,9 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
+	"time"
+
 	"github.com/aliyun/alibaba-cloud-sdk-go/sdk/requests"
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/ecs"
-	"time"
 )
 
 func NewClient(regionId, accessKeyId, accessKeySecret string) *ecs.Client {
